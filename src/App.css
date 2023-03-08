@@ -1,0 +1,17 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+:root {
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --dominant1: #344B59; 
+  --dominant2: #7ABEA7; 
+  --accent1: #CDE5D8;
+  --accent2: #AED4D5;
+  --accent3: #E4E5E9;
+  --accent4: #B77650; 
+}
+

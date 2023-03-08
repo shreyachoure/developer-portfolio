@@ -1,0 +1,36 @@
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 -1px var(--accent1), 0 0px 6px var(--gray4);
+}
+
+.logo {
+    list-style: none;
+    background-color: var(--accent2);
+    color: var(--dominant1);
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px 10px 20px 10px;
+    border-radius: 50%;
+    border: 2px solid var(--dominant1);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--accent2);
+}
+
+.navbar-light .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dominant1);
+}
+
+.navbar-light .nav-item.active .nav-link {
+    font-weight: 800;
+    color: var(--dominant1);
+    border-bottom: 1px solid var(--accent2);
+}
+
+.navbar-light .nav-item:hover .nav-link {
+    background-color: var(--accent2);
+    color: var(--dominant1);
+}
