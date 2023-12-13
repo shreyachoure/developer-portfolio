@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import "./App.css";
+import "../../App.css";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
           </p>
           <p className="my-2">
             As I prepare to graduate in March 2024, I am currently seeking
-            internship opportunities to apply skills in academic career and gain
+            full time or internship opportunities to apply skills in academic career and gain
             practical industry experience.
           </p>
 
@@ -37,7 +37,7 @@ const About = () => {
                   className="social-logo"
                   type="logo"
                   name="gmail"
-                  color="#b77650"
+                  color="#D96846"
                   alt="gmail-logo"
                 ></box-icon>
               </a>
@@ -48,7 +48,7 @@ const About = () => {
                   className="social-logo"
                   type="logo"
                   name="github"
-                  color="#b77650"
+                  color="#D96846"
                   alt="github logo"
                 ></box-icon>
               </a>
@@ -62,7 +62,7 @@ const About = () => {
                   className="social-logo"
                   type="logo"
                   name="linkedin"
-                  color="#b77650"
+                  color="#D96846"
                   alt="linkedin logo"
                 ></box-icon>
               </a>
@@ -76,7 +76,7 @@ const About = () => {
                   className="social-logo"
                   type="logo"
                   name="instagram"
-                  color="#b77650"
+                  color="#D96846"
                   alt="instagram logo"
                 ></box-icon>
               </a>

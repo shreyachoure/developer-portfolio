@@ -1,0 +1,19 @@
+/* experience component */
+.exp-card-header {
+    background-color: var(--accent2) !important;
+}
+
+.exp-desc {
+    text-align: justify;
+}
+
+.btn-link{
+    text-decoration: none;
+    color: var(--dominant1) !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.btn-link:hover {
+    color: var(--dominant1) !important;
+}
