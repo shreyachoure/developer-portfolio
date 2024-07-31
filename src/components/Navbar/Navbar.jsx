@@ -1,53 +1,36 @@
 import React from "react";
+import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import "../../App.css";
-
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-md navbar-light">
-      <div className="container">
-        <li className="logo align-items-center" href="#">
-          &#8826;SC&#8725;&#8827;
-        </li>
+	return (
+		<Box
+			className="navigation"
+			m={4}
+			mx="auto"
+			w="400px"
+			h="50px"
+			display="flex"
+			alignItems="center"
+			justifyContent="center"
+		>
+			<HStack cursor="pointer" spacing={5}>
+				<Link className="navLink" to="/">
+					<Text>Home</Text>
+				</Link>
 
-        <button
-          className="navbar-toggler custom-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#experience">
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projects">
-                Project
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+				<Link className="navLink" to="/projects">
+					<Text>Projects</Text>
+				</Link>
+				<Link className="navLink" to="/work">
+					<Text>Work</Text>
+				</Link>
+				<Link className="navLink" to="/contact">
+					<Text>Contact</Text>
+				</Link>
+			</HStack>
+		</Box>
+	);
 };
 
 export default Navbar;

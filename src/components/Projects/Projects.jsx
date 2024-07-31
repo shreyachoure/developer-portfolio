@@ -2,32 +2,46 @@ import React from "react";
 import { ProjectData } from "./ProjectData";
 import "../../App.css";
 import "./Projects.css";
+import {
+	Box,
+	Text,
+	Card,
+	CardHeader,
+	CardBody,
+	Heading,
+	Image,
+	ScaleFade,
+	Stack,
+	SimpleGrid,
+	CardFooter,
+} from "@chakra-ui/react";
 
 const Projects = () => {
-  return (
-    <section className="container my-5" id="projects">
-      <h3 className="section-header my-3">Projects</h3>
-      <div className="project-container">
-        {ProjectData.map((project) => (
-          <div className="project-card card">
-            <img
-              alt="project"
-              className="project-image card-img-top"
-              src={project.image}
-            />
+	return (
+		<SimpleGrid columns={[1, 2, 3, 4]} spacing="40px">
+			{ProjectData.map((project) => (
+				<Box>
+					<Card flex="1" display="flex" flexDirection="column">
+						<CardBody flex="1">
+							<Stack spacing={3}>
+								<Image boxSize="150px" alt="project" src={project.image} />
 
-            <div className="card-body">
-              <h5 className="card-title">{project.title}</h5>
-              <p className="project-desc card-text">{project.description}</p>
-              <a className="github-project card-link" href={project.github}>
-                Github Link
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+								<Heading size="md">{project.title}</Heading>
+
+								<Text>{project.description}</Text>
+								<Text
+									className="github-project card-link"
+									href={project.github}
+								>
+									Github Link
+								</Text>
+							</Stack>
+						</CardBody>
+					</Card>
+				</Box>
+			))}
+		</SimpleGrid>
+	);
 };
 
 export default Projects;

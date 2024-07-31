@@ -4,21 +4,13 @@
     color: var(--dominant1);
 }
 
-.main-intro h2 {
-    color: var(--accent4);
-    font-weight: 800;
-}
-
 .main-intro p {
     font-size: 18px;
     line-height: 1.5em;
     text-align: justify;
 }
 
-.socials {
-    margin: 0;
-    padding: 0;
-}
+
 
 .social-item {
     display: inline;
@@ -38,4 +30,35 @@
 
 .hand-wave {
     font-size: 30px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Optional: background gradient */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.intro-section {
+  max-width: 600px;
+}
+
+.animation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 20px;
 }

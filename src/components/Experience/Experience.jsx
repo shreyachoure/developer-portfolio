@@ -1,51 +1,87 @@
 import React from "react";
-import ExperienceCard from "./ExperienceCard";
-import "./Experience.css";
-import "../../App.css";
+import {
+	Box,
+	Flex,
+	Heading,
+	Text,
+	Badge,
+	HStack,
+	Icon,
+	SimpleGrid,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { FaBriefcase } from "react-icons/fa";
 
-const Experience = () => {
-  return (
+const workExperiences = [
+	{
+		company: "SandStream Marketing",
+		role: "Software Engineer",
+		duration: "Jan 2020 - Present",
+		description:
+			"Developed and maintained web applications, enhancing user experience and increasing engagement by 30%.",
+	},
+	{
+		company: "IBM",
+		role: "Full Stack Developer",
+		duration: "Jun 2018 - Dec 2019",
+		description:
+			"Built scalable, secure applications with Node.js and React, improving system performance by 40%.",
+	},
+	{
+		company: "Kerkar Media",
+		role: "Frontend Developer",
+		duration: "Jan 2016 - May 2018",
+		description:
+			"Created responsive and interactive UIs with React, boosting client satisfaction by 25%.",
+	},
+	{
+		company: "Programming Hub",
+		role: "Software Developer Intern",
+		duration: "Jun 2015 - Dec 2015",
+		description:
+			"Assisted in the development of educational software, contributing to a 15% increase in user retention.",
+	},
+];
 
-    <section className="container my-5" id="experience">
-      <h2 className="section-header">
-        <span className="heading">Work Experience</span>
-      </h2>
-      <div id="accordion">
-        <ExperienceCard title="Associate System Engineer, IBM" id="collapseOne">
-          {
-            <ul>
-              <li>
-              Contributed to a 4-member team at IBM to manage financial transactions for Panasonic, USA which involved optimizing Java based WebMethods SAP support integration.
-              </li>
-              <li>Implemented Python and Linux scripts to automate daily monitoring, error debugging and system reporting which reduced transaction failure rate by 38%.</li>
-              <li>Established a training program for 10 new SDE hires consisting of troubleshooting documentation and codebook. </li>
-              <li>Revamped software patching methodology to address performance bottlenecks resulting decrease in application downtime by 20% and improving quality assurance by 25%.</li>
-            </ul>
-          }
-        </ExperienceCard>
-        <ExperienceCard title="Fullstack Developer, Kerkar Media" id="collapseTwo">
-          {
-            <ul>
-              <li>Built an e-commerce application implementing review system, payment gateway, and live customer support boosting company profit by 15%.</li>
-              <li>Led marketing and ad-specific templates, forms for digital marketing brand enhancing user experience metrics and achieving an engagement conversion rate of 8%.</li>
-              <li>Managed projects on AWS for quick secure access along with cost savings improving application experience by 10%.</li>
-            </ul>
-          }
-        </ExperienceCard>
-        <ExperienceCard title="Software Developer, Programming Hub" id="collapseThree">
-          {
-            <ul>
-              <li>Designed and developed mobile responsive content management system for e-learning programming academy resulting in a 30% increase in customer satisfaction and compliance.</li>
-              <li>Refactored PHP code to Vue.js for code maintainability and improved runtime performance by 18%.</li>
+const MotionBox = motion(Box);
 
-            </ul>
-          }
-        </ExperienceCard>
-      </div>
-    </section>
-
-
-  );
+const WorkExperience = () => {
+	return (
+		<Box p={8} bg="gray.50" borderRadius="lg">
+			<Heading color="#6C63FF" as="h2" size="xl" mb={6} textAlign="center">
+				Work Experience
+			</Heading>
+			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
+				{workExperiences.map((experience, index) => (
+					<MotionBox
+						key={index}
+						p={5}
+						borderWidth="1px"
+						borderRadius="lg"
+						bg="white"
+						shadow="md"
+						whileHover={{ scale: 1.05 }}
+						transition={{ duration: 0.3 }}
+						_hover={{ boxShadow: "xl" }}
+					>
+						<Flex justify="space-between" align="center" mb={3}>
+							<HStack spacing={3}>
+								<Icon as={FaBriefcase} w={6} h={6} color="#6C63FF" />
+								<Heading as="h3" size="md">
+									{experience.role}
+								</Heading>
+							</HStack>
+							<Badge colorScheme="teal">{experience.duration}</Badge>
+						</Flex>
+						<Text fontWeight="bold" fontSize="lg" mb={2}>
+							{experience.company}
+						</Text>
+						<Text>{experience.description}</Text>
+					</MotionBox>
+				))}
+			</SimpleGrid>
+		</Box>
+	);
 };
 
-export default Experience;
+export default WorkExperience;

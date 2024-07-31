@@ -1,17 +1,15 @@
 export const ProjectData = [
 	{
-		title: "Conversation Summarizer",
-		subject: "Natural Language Processing",
+		title: "Video Game Discovery",
 		description:
-			"Elevate understanding of textual conversations with this cutting-edge NLP Summarization project. From TF-IDF to advanced BART and T5 models, this Python-powered endeavor guarantees an 85% accuracy in contextually relevant summaries. With the integration of GPT-4, the Streamlit-based application provides real-time data processing, pushing the boundaries of summarization capabilities and user engagement by 40%.",
-		image: process.env.PUBLIC_URL + "/conversations.png",
-		github: "https://github.com/schoure98/Text-summarizer",
+			"Developed a full-stack game discovery app with React and React Query, featuring search, sorting, and infinite scrolling capabilities.",
+		image: process.env.PUBLIC_URL + "/parksExpo.png",
+		github: "https://github.com/schoure98/Park-Dashboard",
 	},
 	{
 		title: "Parks Explorer",
-		subject: "Frontend Development",
 		description:
-			"Embark on a virtual journey through the Parks Explorer, a React-based application seamlessly integrating OpenWeather and National Park Service APIs. Immerse yourself in an intuitive dashboard offering personalized recommendations and real-time weather forecasts. With dynamic maps powered by D3.js and react-simple-maps, explore the beauty of national parks with enhanced user engagement through captivating visualizations.",
+			"Designed a dashboard with React and dynamic maps, integrating weather and park data for improved exploration and user engagement.",
 		image: process.env.PUBLIC_URL + "/parksExpo.png",
 		github: "https://github.com/schoure98/Park-Dashboard",
 	},
@@ -19,23 +17,21 @@ export const ProjectData = [
 		title: "Android Application Analysis",
 		subject: "Database Management",
 		description:
-			"Uncover insights into the dynamic world of Android applications with my Google Playstore Analysis project. Through SQL, Python, and PostgreSQL, I've meticulously crafted a database, conducted in-depth analyses, and visualized trends using Seaborn and Tableau. From genre-based explorations to sentiment analysis, this project showcases the power of data-driven decision-making in the app market.",
+			"Designed and optimized a PostgreSQL database for analyzing app data, improving performance and generating insightful visualizations.",
 		image: process.env.PUBLIC_URL + "/database_project.png",
 		github: "https://github.com/schoure98/Google-Applications-Analysis",
 	},
 	{
 		title: "Digital Travel Memories",
-		subject: "Fullstack Web Development",
 		description:
-			"Relive your travel adventures through the Digital Travel Memories project, a full-stack endeavor powered by React and Firebase. With Google Location API integration, this platform enables users to create and store over 500 travel memories, complete with timestamps and location-based features. Immerse yourself in an optimized user interface, ensuring swift data retrieval and enhanced user engagement with captivating CSS animations.",
+			"Developed for an avid traveller, the app allows to create, store and update travel memories with Google Location API and Firebase support.",
 		image: process.env.PUBLIC_URL + "/fullstack_project.png",
 		github: "https://github.com/schoure98/image_gallery_fullstack",
 	},
 	{
 		title: "Books Recommendation",
-		subject: "Software Engineering",
 		description:
-			"Dive into the world of literature with the application. This Flask and Python-powered platform employs collaborative and popularity-based recommendation algorithms, ensuring an 80% accuracy in suggesting your next read. Experience the precision of content evaluation techniques, boosting accuracy to an impressive 95%, all while enjoying a seamless end-to-end web application that caters to your unique reading preferences.",
+			"Developed a book recommendation system using Python and collaborative filtering techniques, achieving high accuracy with content evaluation.",
 		image: process.env.PUBLIC_URL + "/recommendation_project.png",
 		github: "https://github.com/schoure98/FindYourNextBook",
 	},
@@ -43,8 +39,29 @@ export const ProjectData = [
 		title: "Text Adventure",
 		subject: "Functional Programming",
 		description:
-			"Immerse yourself in an enchanting journey with our Text-Based Adventure game, meticulously crafted with PureScript and functional programming principles. Experience an innovative blend of high-order functions, monad transformers, and interactive inventory management that not only enhances gameplay but also ensures code readability and maintainability. Elevate your gaming experience with this unique and engaging project.",
+			"Developed a terminal-based adventure game using PureScript and functional programming, enhancing gameplay and reducing debugging time.",
 		image: process.env.PUBLIC_URL + "/text based.png",
 		github: "https://github.com/schoure98/text_adventure",
+	},
+	{
+		title: "SQL Query Generator",
+		description:
+			"Developed a Text-to-SQL model using Code Bison, Gemma, and GPT-3.5, optimized with LoRA and QLoRA fine-tuning on a dataset of 78.5K SQL queries for efficient schema and content generation.",
+		image: process.env.PUBLIC_URL + "/conversations.png",
+		github: "https://github.com/schoure98/Text-summarizer",
+	},
+	{
+		title: "AI Driven Storytelling",
+		description:
+			"Created a Python script using the Transformers library to convert images into descriptive text and generate engaging stories, showcasing expertise in AI with Bloom and Bloomz large language models.",
+		image: process.env.PUBLIC_URL + "/conversations.png",
+		github: "https://github.com/schoure98/Text-summarizer",
+	},
+	{
+		title: "Conversation Summarizer",
+		description:
+			"Implemented NLP algorithms in Python using BART and GPT-4 for summarizing conversations with high contextual relevance.",
+		image: process.env.PUBLIC_URL + "/conversations.png",
+		github: "https://github.com/schoure98/Text-summarizer",
 	},
 ];
