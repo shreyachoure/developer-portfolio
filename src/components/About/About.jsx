@@ -23,7 +23,7 @@ const About = () => {
 						Full-stack Web and Mobile <br />
 						Application Developer
 					</Heading>
-					<Text fontSize="md" mb={4}>
+					{/* <Text fontSize="md" mb={4}>
 						Hi there, I'm Shreya! I specialize in frontend engineering with a
 						strong focus on React and TypeScript. My passion lies in creating
 						user-friendly, interactive, and responsive UI experiences. With
@@ -49,6 +49,18 @@ const About = () => {
 						seeking a detail-oriented and innovative software engineer, or a
 						tech professional looking to exchange ideas and explore new
 						technologies, I would love to connect with you!
+					</Text> */}
+					<Text size="xl" lineHeight="2rem">
+						Hi, I'm Shreya! I'm a frontend engineer specializing in React and
+						TypeScript, passionate about building user-friendly and responsive
+						UI. I recently graduated with a Master’s in Computer Science from
+						Portland State University. With experience at IBM India and a
+						dynamic startup, I excel as a Full Stack Developer and Software
+						Engineer, quickly adapting to new technologies. I'm enthusiastic
+						about AI and Large Language Models, exploring their potential in
+						full-stack applications. I'm currently seeking new opportunities in
+						Software and Web Development. Let's connect if you're looking for an
+						innovative engineer or to discuss tech ideas!
 					</Text>
 					<Socials />
 				</VStack>
