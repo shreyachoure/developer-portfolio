@@ -10,11 +10,31 @@ import {
 	Container,
 	Flex,
 	Divider,
+	Textarea,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import Socials from "../components/About/Socials";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+	const formRef = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs
+			.sendForm("service_portfolio_form", "get_message_data", formRef.current, {
+				publicKey: "2qwtbtqQ9yzS2C5xh",
+			})
+			.then(
+				() => {
+					console.log("SUCCESS!");
+				},
+				(error) => {
+					console.log("FAILED...", error.text);
+				}
+			);
+	};
+
 	return (
 		<Flex
 			height="100vh"
@@ -37,23 +57,32 @@ const Contact = () => {
 							opportunities to be part of your vision. Whether you have a
 							question, a proposal, or just want to say hello, feel free to
 							reach out!
-							<Divider />
-							<Socials />
 						</Text>
+						<Divider />
+						<Socials />
 					</Box>
 					<Box>
-						<FormControl>
-							<FormLabel>Name</FormLabel>
-							<Input type="text"></Input>
-							<FormLabel mt={4}>Email Address</FormLabel>
-							<Input type="email"></Input>
-							<Button type="submit" mt={4} colorScheme="teal">
-								Submit
-							</Button>
-							<Button type="reset" mt={4} ml={4}>
-								Reset
-							</Button>
-						</FormControl>
+						<form ref={formRef} onSubmit={sendEmail}>
+							<FormControl>
+								<FormLabel>Name</FormLabel>
+								<Input type="text" name="user_name" />
+								<FormLabel mt={4}>Email Address</FormLabel>
+								<Input type="email" name="user_email" />
+								<FormLabel mt={4}>Message</FormLabel>
+								<Textarea name="message" />
+								<Button
+									onClick={sendEmail}
+									type="submit"
+									mt={4}
+									colorScheme="teal"
+								>
+									Submit
+								</Button>
+								<Button type="reset" mt={4} ml={4}>
+									Reset
+								</Button>
+							</FormControl>
+						</form>
 					</Box>
 				</SimpleGrid>
 			</Container>
