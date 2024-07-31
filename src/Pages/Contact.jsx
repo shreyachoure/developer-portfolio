@@ -27,10 +27,10 @@ const Contact = () => {
 			})
 			.then(
 				() => {
-					console.log("SUCCESS!");
+					alert("Sent Message!");
 				},
 				(error) => {
-					console.log("FAILED...", error.text);
+					alert("Could not send message", error.text);
 				}
 			);
 	};
