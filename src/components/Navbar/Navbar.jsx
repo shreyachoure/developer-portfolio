@@ -16,17 +16,17 @@ const Navbar = () => {
 		>
 			<HStack cursor="pointer" spacing={5}>
 				<Link className="navLink" to="/">
-					<Text>Home</Text>
+					Home
 				</Link>
 
 				<Link className="navLink" to="/projects">
-					<Text>Projects</Text>
+					Projects
 				</Link>
 				<Link className="navLink" to="/work">
-					<Text>Work</Text>
+					Work
 				</Link>
 				<Link className="navLink" to="/contact">
-					<Text>Contact</Text>
+					Contact
 				</Link>
 			</HStack>
 		</Box>
