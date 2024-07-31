@@ -21,7 +21,7 @@ import {
 const Projects = () => {
 	return (
 		<Box margin="5">
-			<SimpleGrid columns={[1, 2, 3]} spacing="40px">
+			<SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing="40px">
 				{ProjectData.map((project) => (
 					<Box>
 						<Card flex="1" display="flex" flexDirection="column">
