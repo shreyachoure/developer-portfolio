@@ -6,7 +6,6 @@ import {
 	Text,
 	Badge,
 	HStack,
-	Icon,
 	SimpleGrid,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";

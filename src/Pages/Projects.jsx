@@ -1,12 +1,7 @@
 import React from "react";
-import { Box, Heading } from "@chakra-ui/react";
 import Projects from "../components/Projects/Projects";
 const ProjectsPage = () => {
-	return (
-		<Box>
-			<Projects />
-		</Box>
-	);
+	return <Projects />;
 };
 
 export default ProjectsPage;

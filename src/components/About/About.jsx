@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Lottie from "react-lottie";
 import animationData from "./animation.json";
-import { Heading, Text, Button, Box, VStack, Flex } from "@chakra-ui/react";
+import { Heading, Text, Box, VStack, Flex } from "@chakra-ui/react";
 import Socials from "./Socials";
 
 const About = () => {
