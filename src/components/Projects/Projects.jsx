@@ -14,33 +14,48 @@ import {
 	Stack,
 	SimpleGrid,
 	CardFooter,
+	Link,
+	Badge,
 } from "@chakra-ui/react";
 
 const Projects = () => {
 	return (
-		<SimpleGrid columns={[1, 2, 3, 4]} spacing="40px">
-			{ProjectData.map((project) => (
-				<Box>
-					<Card flex="1" display="flex" flexDirection="column">
-						<CardBody flex="1">
-							<Stack spacing={3}>
-								<Image boxSize="150px" alt="project" src={project.image} />
+		<Box margin="5">
+			<SimpleGrid columns={[1, 2, 3]} spacing="40px">
+				{ProjectData.map((project) => (
+					<Box>
+						<Card flex="1" display="flex" flexDirection="column">
+							<CardBody flex="1">
+								<Stack>
+									<Image alt="project" src={project.image} />
 
-								<Heading size="md">{project.title}</Heading>
+									<Heading size="md">{project.title}</Heading>
 
-								<Text>{project.description}</Text>
-								<Text
-									className="github-project card-link"
-									href={project.github}
-								>
-									Github Link
-								</Text>
-							</Stack>
-						</CardBody>
-					</Card>
-				</Box>
-			))}
-		</SimpleGrid>
+									<Text>{project.description}</Text>
+									<Link
+										marginBottom="0"
+										className="github-project card-link"
+										href={project.github}
+										isExternal
+									>
+										Github Link
+									</Link>
+
+									<Link
+										marginLeft="0 !important"
+										className="github-project card-link"
+										href={project.demo}
+										isExternal
+									>
+										<Badge>Application Link</Badge>
+									</Link>
+								</Stack>
+							</CardBody>
+						</Card>
+					</Box>
+				))}
+			</SimpleGrid>
+		</Box>
 	);
 };
 
