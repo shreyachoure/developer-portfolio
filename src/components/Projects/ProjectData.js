@@ -1,5 +1,21 @@
 export const ProjectData = [
 	{
+		title: "ChatDocs",
+		description:
+			"AI-driven assistant that allows users to upload and interact with PDF documents, answering questions and providing insights based on the content of those documents. Built using Streamlit, OpenAI, AWS S3, LanceDB, and Langchain for efficient document processing and retrieval.",
+		image: process.env.PUBLIC_URL + "/chatdocs.png",
+		github: "https://github.com/shreyachoure/RAG_DocBot",
+		demo: "https://rag-docbot.streamlit.app/",
+	},
+	{
+		title: "Thoughtstream",
+		description:
+			"Revolutionized traditional blogging by integrating AI-assisted content generation and publication, making it easier and faster for users to create and manage their blog posts. Technologies used are: Next.js, Sanity.io, Vercel. ",
+		image: process.env.PUBLIC_URL + "/thoughtstream.png",
+		github: "https://github.com/shreyachoure/blogging-application",
+		demo: "https://blogging-application-theta.vercel.app/",
+	},
+	{
 		title: "Video Game Discovery",
 		description:
 			"Full-stack video games discovery application with React and React Query, featuring search, sorting, and infinite scrolling capabilities.",
