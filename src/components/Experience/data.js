@@ -1,10 +1,9 @@
 export const experience = [
 	{
-		company: "SandStream Marketing",
-		role: "Software Engineer",
-		duration: "December 2023 - June 2024",
-		description:
-			"Upgraded from React 16 to 18, enhancing the user interface's responsiveness and performance, reducing dependency issues. \nMigrated the codebase from JavaScript to TypeScript, while collaborating in code reviews, enhancing code quality and maintainability, and reducing runtime errors. \nReplaced JWT tokens with AWS Cognito and Lambda for authentication and authorization, increasing the application's scalability and security.\nLed development of React Native application with Zustand for state management achieving 25% increase in app performance.",
+		company: "Cognizant",
+		role: "Software Development Engineer",
+		duration: "December 2023 - Present",
+		description:"Followed Agile Scrum methodology, conducting iterative application development cycles and stand-up meetings to streamline processes and improve team collaboration. /nStrengthened authentication with AWS Lambda, increasing sign-ups by 30% and reducing unauthorized access by 50%, enhancing security and user experience, improving UX/UI design and boosting conversion rates by 40%./nMigrated 50+ Action Servlets and JSPs to the Struts framework, ensuring a smooth transition with minimal disruption, which resulted in a 30% improvement in system maintainability and reduced future development time by 20%./nDeveloped a modern, responsive front-end using HTML, CSS, JavaScript, and React.JS, delivering a 30% increase in user engagement and reducing page load time by 25%, resulting in a more dynamic and user-friendly interface. /nManaged and optimized database operations in Oracle and SQL Server, implementing advanced SQL and indexing strategies to improve data fetching by 40% and ensure a scalable, high-performance database architecture for critical applications."
 	},
 	{
 		company: "IBM",
@@ -14,17 +13,11 @@ export const experience = [
 			"Maintained and managed application for SAP transactions for Panasonic, optimizing legacy Java code resulting improved compatibility, and reducing transaction failure rates.\nAutomated system reporting and email delivery with Linux, Python scripts, to improve accuracy and scalability. \nRevamped software patching methodology to address performance bottlenecks improving compliance management. \nPioneered platform specific troubleshooting documentation and codebook used for training new hires.",
 	},
 	{
-		company: "Kerkar Media",
+		company: "Groovy Web",
 		role: "Fullstack Software Developer",
-		duration: "September 2020 - July 2021",
+		duration: "July 2019 - July 2021",
 		description:
 			"Developed MERN stack application for digital marketing and accounting firm integrated with AWS microservices and analytics. \nLed agile development of full stack projects from requirement gathering to deployment of web application in cycle of 14 days each.\nEngineered mobile application for a local baker, and a plants studio in React Native.",
 	},
-	{
-		company: "Programming Hub",
-		role: "Web Developer",
-		duration: "July 2019 - August 2020",
-		description:
-			"Migrated an application from PHP codebase to Vue.js, to improve maintainability and page load times through a component-based architecture.\nBuilt robust user and course management API endpoints using Node.js, following REST principles and implementing throttling.\nDeveloped comprehensive unit tests using Vitest and React Testing Library, covering over 80% of the codebase and significantly improving code reliability and bug detection.",
-	},
+	
 ];
